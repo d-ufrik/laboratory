@@ -3,8 +3,10 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
   <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded arjs>
+    <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" gesture-detector>
       <a-assets>
         <img id="bricked" src="textures/brick1.png">
         <img id="dashboard01" src="images/db.png">
@@ -15,6 +17,8 @@
           position="0 0 0"
           scale="1 1 1"
           src="#bricked"
+          class="clickable"
+          gesture-handler="minScale: 0.25; maxScale: 10"
           ></a-box>
           <a-image position="1 0 0" src="#dashboard01"></a-image>
 
