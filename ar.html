@@ -17,7 +17,7 @@
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg">
       </a-assets>
-      <a-box position="0 0 0" height="0.3" width="0.5"  rotation="0 45 0" color="#4CC3D9" src="#boxTexture"
+      <a-box position="0 0 0" height="0.3" width="0.5"  rotation="0 45 0" color="#4CC3D9" material='opacity: 0.5;' src="#boxTexture"
       event-set__enter="_event: mouseenter; _target: #cylinderText; visible: true"
       event-set__leave="_event: mouseleave; _target: #cylinderText; visible: false">
         <!--<a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
