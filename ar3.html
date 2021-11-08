@@ -41,7 +41,7 @@
   </style>
   <body style="margin : 0px; overflow: hidden;">
     <div class="buttons">
-      <button class="say-hi-button"></button>
+      <button class="say-hi-button">HI!</button>
     </div>
     <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" gesture-detector>
       <a-assets>
@@ -57,7 +57,7 @@
           class="clickable"
           gesture-handler="minScale: 0.25; maxScale: 10"
           ></a-box>
-          <a-image position="1 0 0" src="#dashboard01" class="clickable"
+          <a-image id="i01" position="1 0 0" src="#dashboard01" class="clickable"
           gesture-handler></a-image>
 
 
