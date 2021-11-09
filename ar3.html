@@ -12,7 +12,8 @@
           // here you can change also a-scene or a-entity properties, like
           // changing your 3D model source, size, position and so on
           // or you can just open links, trigger actions...
-          $("#i01").setAttribute('src', '#dashboard2');
+          const aEntity = document.querySelector("#i01")
+          aEntity.setAttribute('src', '#dashboard2');
           alert("Hi there!");
         });
     };
